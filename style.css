@@ -1,0 +1,279 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#fff2f2;
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  
+  .button_1{
+    height:38px;
+    background:#4e4e4e;
+    border:0;
+    padding-left: 20px;
+    padding-right:20px;
+    color:#ffffff;
+  }
+  
+  .dark{
+    padding:15px;
+    background:#2786bd;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  
+  /* Header **/
+  header{
+    background:#000000;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#000000 3px solid;
+  }
+  
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:#ff0000;
+    font-weight:bold;
+  }
+  
+  header a:hover{
+    color:#ffffff;
+    font-weight:bold;
+  }
+  header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  /* Showcase */
+  #showcase{
+    min-height:400px;
+    background:url('banner143.jpeg') no-repeat;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#ffffff;
+  }
+  
+  #showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+  
+  /* Newsletter */
+  #newsletter{
+    padding:15px;
+    color:#ffffff;
+    background:#000000
+  }
+  
+  #newsletter h1{
+    float:left;
+  }
+  
+  #newsletter form {
+    float:right;
+    margin-top:15px;
+  }
+  
+  #newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+  }
+  
+  /* Boxes */
+  #boxes{
+    margin-top:20px;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  }
+  
+  #boxes .box img{
+    width:90px;
+  }
+  
+  /* Sidebar */
+  aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+  }
+  #sidebar ul{
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  #sidebar li{
+    float: none;
+    display: list-item;
+  }
+  ul{
+    all:revert;
+  }
+  
+  aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+  }
+  
+  /* Main-col */
+  article#main-col{
+    float:left;
+    width:65%;
+  }
+  
+  /* Services */
+  ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+  
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#000000;
+    text-align: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.play-icon {
+    background: red;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 522px;
+    margin-right: 1px;
+}
+
+.text {
+    color: black;
+}
+.fb-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 40px;
+  background-color: #1877F2;
+  border-radius: 20px;
+}
+
+.fb-icon {
+  width: 60px;
+  height: 50px;
+}
+.social-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  align-items: center;
+  width: 40px;
+  height: 50px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.center-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px; /* Adjust height as needed */
+}
+  
+  /* Media Queries */
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #showcase h1{
+      margin-top:40px;
+    }
+  
+    #newsletter button, .quote button{
+      display:block;
+      width:100%;
+    }
+  
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+      width:100%;
+      margin-bottom:5px;
+    }
+  }
